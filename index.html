@@ -1,54 +1,89 @@
 <html>
 <head>
+<title>自由香港楷書 Web Font 示範</title>
 <meta charset="utf-8" />
-<!-- Latest compiled and minified CSS -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="自由香港楷書 Web Font 示範">
+<meta name="author" content="Open Source Hong Kong">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+<link href="css/template.css" rel="stylesheet">
 <style>
 @font-face {
     font-family: freehkfonts;
     src: url(Free-HK-Kai_4700.ttf);
 }
 
-div {
+div.bigfont {
+   font-size: 48px;
+}
+
+#footer {
    font-size: 24px;
 }
 
-#license {
-   font-size: 12px;
+textarea.bigfont {
+   font-size: 48px;
 }
 
-textarea {
-   font-size: 24px;
-}
-
-.hk {
+.freehkkai {
     font-family: freehkfonts;
 }
 </style>
 </head>
 <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="freehkkai">自由香港楷書示範</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav freehkkai">
+            <li><a href="https://freehkfonts.opensource.hk">有關自由香港字型</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--- Content --->
+<div class="container">
 <div class="row">
-  <div class="col-xs-18 col-sm-6 col-lg-6 hk">
-    <div>自由香港字型</div>
-    <div>
-<textarea rows="4" class="hk" id="hk">
-歡迎試打字來試用自由香港字型
-例子：告 房 電 滋 妙
-</textarea>
-    </div>
+  <div class="col-sm-12 col-lg-12 freehkkai bigfont">
+    自由香港楷書
   </div>
-  <div class="col-xs-18 col-sm-6 col-lg-6">
-    <div>原中文字體輸出</div>
-    <div><div id="original"></div></div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-12 col-lg-12 form-group">
+<textarea rows="4" class="form-control freehkkai bigfont" id="hk">
+歡迎試打自由香港楷書
+常見例子：告 房 電 滋 妙
+</textarea>
   </div>
 </div>
 <div class="row">
-<div class="col-md-6" id="license">
-Credit:<br />
-自由香港字型 - <a href="https://freehkfonts.opensource.hk">freehkfonts.opensource.hk</a><br />
-Open Source Hong Kong - <a href="https://opensource.hk">opensource.hk</a><br />
-License: General Public License 3.0
+  <div class="col-sm-12 col-lg-12 bigfont">
+    系統預設顯示字體
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-lg-12 bigfont" id="original">
+  </div>
+</div>
+<div class="row">
+<div class="col-md-12" id="footer">
+<span class="freehkkai">鳴謝</span> Credit:<br />
+<span class="freehkkai">字型團隊：<a href="https://freehkfonts.opensource.hk">自由香港字型</a></span><br />
+<span class="freehkkai">雲端寄存：</span><a href="https://www.udomain.hk/">UDomain Web Hosting</a><br />
+<span class="freehkkai">技術支援：</span><a href="https://opensource.hk">Open Source Hong Kong</a><br />
+<span class="freehkkai">原始碼：</span><a href="https://github.com/opensourcehk/freehkfonts-jsdemo"><span class="freehkkai">本網站原始碼</span> Source Code</a> (License: General Public License 3.0)
+</div>
 </div>
 </div>
 <script>
