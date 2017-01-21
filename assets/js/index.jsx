@@ -1,17 +1,20 @@
 import React from 'react';
 import {render} from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import AwesomeComponent from './AwesomeComponent.jsx';
 import AppBarComponent from './AppBarComponent.jsx';
+import CreditComponent from './CreditComponent.jsx';
+import BaseMUI from './BaseMUI.jsx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-class App extends React.Component {
+class App extends BaseMUI {
   render () {
     return (
-      <div>
-        <AppBarComponent />
-        <p> Hello React!</p>
-        <AwesomeComponent />
-      </div>
+      <MuiThemeProvider muiTheme={this.context.muiTheme}>
+         <div>
+          <AppBarComponent />
+          <CreditComponent />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }

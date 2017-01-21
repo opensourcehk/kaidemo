@@ -3,6 +3,9 @@ import BaseMUI from './BaseMUI';
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 
+const fontFamilyStyle = {
+    fontFamily: 'freehkfonts'
+};
 
 class AppBarComponent extends BaseMUI {
 
@@ -11,10 +14,6 @@ class AppBarComponent extends BaseMUI {
   }
 
   render() {
-    let fontFamilyStyle = {
-        fontFamily: 'freehkfonts'
-    };
-
     return (
       <AppBar
           title={<span style={fontFamilyStyle}>自由香港楷書示範</span>}
