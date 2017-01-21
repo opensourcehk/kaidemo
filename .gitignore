@@ -1,0 +1,15 @@
+node_modules
+.yarnclean
+
+*.log
+
+*.swp
+
+/.idea/
+
+webpack.json
+
+.DS_Store
+
+public/images/
+public/js/
