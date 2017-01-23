@@ -6,9 +6,11 @@ const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('bundle.css', { allChunks: true }),
     new UglifyPlugin({minimize: true}),
     new OccurenceOrderPlugin(),

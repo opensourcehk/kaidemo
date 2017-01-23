@@ -2,24 +2,21 @@ import React from 'react';
 import TextField from 'material-ui/TextField';
 import BaseMUI from './BaseMUI';
 
-const bigfontStyle = {
-  fontSize: '48px'
-};
-
-const divBigfontStyle = {
-  fontSize: '48px',
-  border: '1px',
-  borderStyle: 'solid'
-};
-
-const textAreaStyle = {
-  fontFamily: 'freehkfonts',
-  fontSize: '24px'
-};
-
-const style = {
+const styles = {
   container: {
     width: '100%'
+  },
+  bigfontStyle: {
+    fontSize: '48px'
+  },
+  divBigfontStyle: {
+    fontSize: '48px',
+    border: '1px',
+    borderStyle: 'solid'
+  },
+  textAreaStyle: {
+    fontFamily: 'freehkfonts',
+    fontSize: '24px'
   }
 }
 
@@ -44,8 +41,8 @@ class InputCharacterComponent extends BaseMUI {
   render() {
     let numRows = 8;
     return(
-      <div style={style.container}>
-        <div style={bigfontStyle}>
+      <div style={styles.container}>
+        <div style={styles.bigfontStyle}>
           自由香港楷書
         </div>
         <TextField
@@ -53,14 +50,14 @@ class InputCharacterComponent extends BaseMUI {
           multiLine={true}
           floatingLabelText="歡迎試打自由香港楷書"
           rows={numRows}
-          textareaStyle={textAreaStyle}
+          textareaStyle={styles.textAreaStyle}
           onChange={this.handleInput}
           defaultValue={this.state.textFieldValue}
         />
-        <div style={bigfontStyle}>
+        <div style={styles.bigfontStyle}>
           系統預設顯示字體
         </div>
-        <div id='chineseTextResult' style={divBigfontStyle}>
+        <div id='chineseTextResult' style={styles.divBigfontStyle}>
             { this.state.inputText
               .map((line, i) => {
                   return <div key={i}>{line}</div>;
