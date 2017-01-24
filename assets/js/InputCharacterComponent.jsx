@@ -16,7 +16,8 @@ const styles = {
   },
   textAreaStyle: {
     fontFamily: 'freehkfonts',
-    fontSize: '24px'
+    fontSize: '48px',
+    lineHeight: '48px'
   }
 }
 
