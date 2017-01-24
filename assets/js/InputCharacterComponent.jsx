@@ -3,17 +3,6 @@ import TextField from 'material-ui/TextField';
 import BaseMUI from './BaseMUI';
 
 const styles = {
-  container: {
-    width: '100%'
-  },
-  bigfontStyle: {
-    fontSize: '48px'
-  },
-  divBigfontStyle: {
-    fontSize: '48px',
-    border: '1px',
-    borderStyle: 'solid'
-  },
   textAreaStyle: {
     fontFamily: 'freehkfonts',
     fontSize: '48px',
@@ -42,8 +31,8 @@ class InputCharacterComponent extends BaseMUI {
   render() {
     let numRows = 8;
     return(
-      <div style={styles.container}>
-        <div style={styles.bigfontStyle}>
+      <div className='container'>
+        <div className='bigHKfontStyle'>
           自由香港楷書
         </div>
         <TextField
@@ -55,10 +44,10 @@ class InputCharacterComponent extends BaseMUI {
           onChange={this.handleInput}
           defaultValue={this.state.textFieldValue}
         />
-        <div style={styles.bigfontStyle}>
+        <div className='bigfontStyle'>
           系統預設顯示字體
         </div>
-        <div id='chineseTextResult' style={styles.divBigfontStyle}>
+        <div id='chineseTextResult' className='divBigfontStyle'>
             { this.state.inputText
               .map((line, i) => {
                   return <div key={i}>{line}</div>;

@@ -8,11 +8,7 @@ const fontFamilyStyle = {
 };
 
 class AppBarComponent extends BaseMUI {
-
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     return (
       <AppBar

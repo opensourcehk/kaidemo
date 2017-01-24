@@ -13,3 +13,6 @@ webpack.json
 
 public/images/
 public/js/
+public/*.css
+
+.yarnclean
