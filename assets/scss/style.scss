@@ -1,0 +1,43 @@
+.container {
+  width: 100%
+}
+
+@mixin freefont-style($radius) {
+  font-size: $radius;
+  font-family: freehkfonts;
+}
+
+.bigfontStyle {
+  font-size: 48px
+}
+
+.bigHKfontStyle {
+  @include freefont-style(48px);
+}
+
+.divBigfontStyle {
+  border-style: solid;
+  font-size: 48px;
+  border-width: 1px;
+}
+
+.chTextStyle {
+    @include freefont-style(24px);
+}
+
+.enTextStyle {
+    font-size: 24px;
+}
+
+.raisedButtonMarginStyle {
+    margin-left: 10;
+}
+
+.divStyle {
+  margin-bottom: 10;
+}
+
+.licenseStyle {
+    font-size: 24px;
+    margin-left: 10;
+}
