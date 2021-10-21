@@ -11,6 +11,7 @@
 #SysFontArea {
   font-size: 36px;
   text-align: left;
+  white-space: pre-wrap;
 }
 
 #footer {
