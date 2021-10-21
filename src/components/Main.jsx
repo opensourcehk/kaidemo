@@ -12,14 +12,14 @@ function Main(){
       <Grid container>
         <Grid item xs={6}>
           <TextField 
-            label="自由香港楷書字型"
+            label="自由香港楷書"
             defaultValue={ sysFontMessage }
             fullWidth={true}
             multiline
             rows={numRows}
             onChange={updateSysFontArea}
             InputProps={{style: {fontFamily: "freehkfonts", fontSize: 36}}}
-            InputLabelProps={{style: {fontFamily: "freehkfonts"}}}
+            InputLabelProps={{style: {fontFamily: "freehkfonts", fontSize: 24}}}
           />
         </Grid>
         <Grid item xs={6}>

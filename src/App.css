@@ -5,6 +5,7 @@
 @font-face {
   font-family: freehkfonts;
   src: url('./images/Free-HK-Kai_4700-v1.02.ttf') format('truetype');
+  unicode-range: U+4E00-9FFF;
 }
 
 #SysFontArea {
