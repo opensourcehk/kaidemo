@@ -1,8 +1,8 @@
-# 自由香港楷書字型對比示範 kaidemo (FreeHKKai Font Comparsion Demo)
+# 自由香港楷書字型對比示範 kaidemo
  
 自由香港楷書字型對比示範（kaidemo）： [kaidemo.opensource.hk](https://kaidemo.opensource.hk)
 
-Please visit [kaidemo.opensource.hk](https://kaidemo.opensource.hk) for demostration.
+kaidemo is a web project to compare FreeHKKai font with your system font, please visit [kaidemo.opensource.hk](https://kaidemo.opensource.hk) for a try.
 
 ## 提供意見或貢獻 Feedback / Contribution
 
